@@ -1,0 +1,90 @@
+:root {
+    --background-color: #652024;
+    --text-color: #e8d29c;
+    --button-color: #b41b09;
+    --accent-color: #7c5c3b;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 16px;
+    font-family: Arial, serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    width: 100%;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: min(100vw, 80%);
+    margin: 0 auto;
+    text-align: center;
+    gap: 50px;
+  }
+  
+  #heading {
+    margin-top: 0;
+  }
+  
+  #input {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-radius: 2px;
+    padding: 20px;
+    width: 70%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #input label {
+    font-size: 1.2em;
+  }
+  
+  #number {
+    height: 45%;
+    padding: 0 5px;
+  }
+  
+  #output {
+    padding: 7px;
+  }
+  
+  #number, #output {
+    width: 70%;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border: 2px solid var(--background-color);
+    font-size: 1.3em;
+    border-radius: 2px;
+  }
+  
+  #convert-btn {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border-radius: 2px;
+    width: 6em;
+    max-width: 50%;
+    height: 3em;
+    max-height: 50%;
+    font-size: 1.2rem;
+    overflow: hidden;
+  }
+  
+  .hidden {
+    display: none;
+  }
